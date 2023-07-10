@@ -14,7 +14,7 @@ import 'services/logger/logger.dart';
 void main() async {
   FlavorConfig(name: "RELEASE", color: Colors.orange, variables: {
     "masterServerUrl":
-        'https://raw.githubusercontent.com/AlexisL61/JackboxUtility/main/servers.json'
+        'https://raw.githubusercontent.com/BurAndBY/JackboxRutility/main/servers.json'
   });
 
   WidgetsFlutterBinding.ensureInitialized();
