@@ -103,11 +103,9 @@ jobs:
         run: |
           zip -r ../../JackboxUtility_Linux.zip *
       - name: Upload release onto Github
-        uses: ncipollo/release-action@v1
+        uses: actions/upload-artifact@v3
+        working-directory: dist/JackboxUtility_Windows
         with:
-         artifacts: 'JackboxUtility_Windows.zip,JackboxUtility_Linux.zip'
-         token: ${{ secrets.GITHUB_TOKEN }}
-         tag: ${{ needs.retrievingVersion.outputs.version }}
-         prerelease: true
-         allowUpdates: true
+          name: my-artifact
+          path: ../../JackboxUtility_Windows.zip
   
