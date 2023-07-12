@@ -13,7 +13,7 @@ import 'package:window_manager/window_manager.dart';
 void main() async {
   FlavorConfig(name: "BETA", color: Colors.orange, location: BannerLocation.topEnd, variables: {
     "masterServerUrl":
-        'https://raw.githubusercontent.com/AlexisL61/JackboxUtility/dev/servers.json'
+        'https://raw.githubusercontent.com/BurAndBY/JackboxRutility/main/servers.json'
   });
 
   WidgetsFlutterBinding.ensureInitialized();
